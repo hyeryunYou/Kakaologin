@@ -1,0 +1,152 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+}
+
+.LoginContainer {
+    /* width: 1440px;
+    height: 1024px; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginWrapper {
+    width: 397px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 181px;
+    margin-bottom: 181px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.header__title {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 800;
+    counter-reset: #000000;
+}
+
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login__Input__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ID {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login__Input__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.login__Input {
+    height: 12px;
+    border: 1px solid #CFD9E8;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #F7FAFC;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login__Input::placeholder {
+    color: #4A709C;
+}
+
+.login__Input:focus {
+    border: 1px solid #4A709C;
+    outline: none;
+}
+
+/* .error {
+    color: red;
+    font-size: 14px;
+} */
+
+.login__button {
+    height: 46px;
+    background-color: #0D78F2;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 40px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.login__button:hover {
+    background-color: 	#0669da;
+}
+
+.Kakao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 10px;
+}
+
+.KakaoLogin {
+    width: 100%;
+    height: 46px;
+    background-color: #FEE500;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.KakaoLogin:hover {
+        background-color: #fdef73;
+    }
+
+.forgotPassword {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A709C;
+    cursor: pointer;
+}
