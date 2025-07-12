@@ -16,7 +16,6 @@ const KakaoLoginCallback = () => {
                 // 백엔드로 전송
                 // import.meta.env.VITE_APP_URL: .env 파일에 정의된 백엔드 서버 주소 (예: http://localhost:8080)
                 // /callback: 백엔드에서 구현한 카카오 로그인 처리용 API 경로
-                // TODO : 경로 백엔드꺼 보고 수정하기
                 console.log("인가코드:", code);
                 
                 const response = await axios.get(`${import.meta.env.VITE_APP_URL}/callback`, {
@@ -32,7 +31,6 @@ const KakaoLoginCallback = () => {
                 localStorage.setItem("accessToken", accessToken);
 
                 console.log("응답 데이터:", response.data);
-                // localStorage.getItem("accessToken")
 
                 //로그인 성공 시 페이지 이동
                 console.log("로그인 성공! 페이지 이동");
