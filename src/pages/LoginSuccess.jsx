@@ -1,6 +1,4 @@
-//카카오 로그인 성공 시 뜰 페이지
-
-import React from "react";
+// 카카오 로그인 성공 시 뜰 페이지
 
 const LoginSuccess = () => {
     return (
