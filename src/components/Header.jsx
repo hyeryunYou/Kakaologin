@@ -71,7 +71,9 @@ const ProfileBtn = styled.button`
 `;
 
 const Header = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(true); // 처음엔 로그인 상태
+    const [isLoggedIn, setIsLoggedIn] = useState(() =>{
+        return !!localStorage.getItem("accessToken"); // accessToken이 있으면 → true
+    });
     const navigate = useNavigate();
 
     const handleLogout = () => {
@@ -92,7 +94,9 @@ const Header = () => {
             <HomeBtn onClick={() => navigate('/Main')}/>
             <RightSection>
                 <MyPageBtn onClick={() => navigate('/Mypage')}>마이페이지</MyPageBtn>
-                <LogoutBtn onClick={handleLogout}>{isLoggedIn ? '로그아웃' : '로그인'}</LogoutBtn>
+                <LogoutBtn onClick={handleLogout}>
+                    {isLoggedIn ? '로그아웃' : '로그인'}
+                </LogoutBtn>
                 <ProfileBtn onClick={() => navigate('/Mypage')}/>
             </RightSection>
         </HeaderWrapper>
