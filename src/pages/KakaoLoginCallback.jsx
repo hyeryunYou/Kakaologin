@@ -34,7 +34,7 @@ const KakaoLoginCallback = () => {
 
                 //로그인 성공 시 페이지 이동
                 console.log("로그인 성공! 페이지 이동");
-                navigate('/LoginSuccess');
+                navigate('/Main');
             } catch (error) {
                 alert("카카오 로그인 실패" + error.response?.data?.message);
             }
