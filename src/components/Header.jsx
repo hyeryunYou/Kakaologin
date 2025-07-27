@@ -80,7 +80,7 @@ const Header = () => {
             // local storage 제거
             localStorage.removeItem("accessToken");
             alert("로그아웃되었습니다.");
-            // setIsLoggedIn(false);
+            setIsLoggedIn(false);
         } else {
             // 로그인 버튼 클릭 시 /로 이동
             navigate('/');
