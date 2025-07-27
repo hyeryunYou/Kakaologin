@@ -1,6 +1,6 @@
 // 기본 로그인 페이지 (버튼 클릭시 카카오 로그인 화면 뜨는 것까지)
 
-import './Login.css';
+import '../styles/Login.css';
 
 const Login = () => {
     // 1. 버튼 눌러 카카오 로그인 화면 띄우기
@@ -27,8 +27,8 @@ const Login = () => {
     return (
         <div className="LoginContainer">
             <div className="LoginWrapper">
-                <div className="header">
-                    <div className="header__title">
+                <div className="login__header">
+                    <div className="login__header__title">
                         9oormthonUNIV_4th_UOU
                     </div>
                 </div>
